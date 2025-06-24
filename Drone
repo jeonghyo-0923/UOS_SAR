@@ -1,0 +1,22 @@
+# 사용방법
+
+```bash
+
+```
+
+## Data
+
+## 폴더 구조
+```
+workspace/
+├── input/
+│   ├── T1/
+│   │   └── 367011758.tif
+│   └── T2/
+│       └── 367011758.tif
+├── model/
+│   └── model.pth
+└── output/
+    ├── status.json
+    └── 367011758.json
+```
