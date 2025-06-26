@@ -40,3 +40,8 @@ sar_uav/
 <img src="https://github.com/user-attachments/assets/03bc1914-5972-4345-812d-1fa192b4b7c3" alt="최종 목표 가시화" width="500"/>
 
 # 구현 방식
+| 파일명               | 설명                             | 실행 여부 |
+|----------------------|----------------------------------|-----------|
+| 1_metadata.py        | 이미지 메타데이터 추출           | ✅        |
+| 2_detection.py       | YOLOv8 객체 탐지 실행            | ✅        |
+| 3_georeferencing.py  | 객체 중심 → GPS 변환 및 지도 저장 | ✅        |
