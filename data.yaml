@@ -1,5 +1,0 @@
-test: ./input/images
-
-nc: 1
-names: ['ship']
-
