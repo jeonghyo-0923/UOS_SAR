@@ -1,7 +1,3 @@
-# 최종 목표
-![image](https://github.com/user-attachments/assets/a34ba99a-e736-4dd7-84ce-d1c5594a545b)
-
-
 # 사용방법
 - 드론 기종: 매빅3
 - Docker
@@ -37,7 +33,10 @@ sar_uav/
 ├── best.pt                       # YOLOv8 훈련된 모델 가중치
 ├── data.yaml                     # YOLOv8 클래스 설정 파일
 └── requirements.txt              # Python 패키지 요구사항
-
-
 ```
 # 구성파일
+
+# 최종 목표
+<img src="https://github.com/user-attachments/assets/03bc1914-5972-4345-812d-1fa192b4b7c3" alt="최종 목표 가시화" width="500"/>
+
+# 구현 방식
