@@ -34,7 +34,12 @@ sar_uav/
 
 # 디렉토리 정보 및 입출력 예시
 - `input/images`: 입력 이미지 (드론 촬영 .JPG 파일)
-- `runs/`: YOLOv8 예측 결과
+```bash
+input/images/
+├── DJI_0775.JPG
+├── DJI_0776.JPG
+```
+
 - `result/images`: 선박 단위로 잘라낸 이미지
 <img src="https://github.com/user-attachments/assets/85ad56e3-ddb9-45f2-ab1e-54b25c678fb3" alt="최종 목표 가시화" width="200"/>
 
