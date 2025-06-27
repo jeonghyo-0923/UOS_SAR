@@ -1,8 +1,8 @@
 # 드론 기반 선박 탐지 및 지오레퍼런싱 시스템
-- 드론 기종: 매빅3
-- Docker 사용방법
+- 드론으로 촬영한 항공 이미지를 입력으로 이미지 내에 존재하는 선박을 자동으로 탐지하고, 각 선박의 경위도좌표를 계산하여 객체 단위 이미지 및 JSON 메타정보를 출력
+- 드론 기종: M30T(다른 기종 고려 예정)
 
-# 최종 목표
+# 최종 가시화 결과
 <img src="https://github.com/user-attachments/assets/84cb42f8-61c9-45d0-b362-ad4bc6e4f9f0" alt="최종 목표 가시화" width="500"/>
 
 # 주요 기능
@@ -100,3 +100,6 @@ result/images/
   - 선박의 경도: "gps_lon"
   - 촬영 시간: "capture_time"
   - 해당 이미지 경로: "image_path"
+
+# Docker 사용 방법
+
