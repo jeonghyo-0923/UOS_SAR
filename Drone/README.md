@@ -3,7 +3,9 @@
 - 드론 기종: M30T(다른 기종 고려 예정)
 
 # 최종 가시화 결과
+<div align="center">
 <img src="https://github.com/user-attachments/assets/84cb42f8-61c9-45d0-b362-ad4bc6e4f9f0" alt="최종 목표 가시화" width="500"/>
+</div>
 
 # 주요 기능
 1. **메타데이터 추출**: 이미지에 포함된 촬영 시점, GPS 정보, 카메라 파라미터 등 XMP 데이터 추출
@@ -51,7 +53,9 @@ result/images/
 ```
 
 - 예시
+<div align="center">
 <img src="https://github.com/user-attachments/assets/85ad56e3-ddb9-45f2-ab1e-54b25c678fb3" alt="최종 목표 가시화" width="200"/>
+</div>
 
 ### (출력) `result/json`: 선박 정보 (위치, 클래스 등) 포함한 JSON
 - <원본 이미지명>_<객체순번>.json으로 저장(이미지와 1:1대응)
