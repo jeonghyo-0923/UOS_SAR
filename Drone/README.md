@@ -3,7 +3,7 @@
 - Docker 사용방법
 
 # 최종 목표
-<img src="https://github.com/user-attachments/assets/03bc1914-5972-4345-812d-1fa192b4b7c3" alt="최종 목표 가시화" width="500"/>
+<img src="https://github.com/user-attachments/assets/84cb42f8-61c9-45d0-b362-ad4bc6e4f9f0" alt="최종 목표 가시화" width="500"/>
 
 # 주요 기능
 1. **메타데이터 추출**: 이미지에 포함된 촬영 시점, GPS 정보, 카메라 파라미터 등 XMP 데이터 추출
