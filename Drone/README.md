@@ -52,7 +52,7 @@ input/images/
   "y_center": 0.498,
   "gps_lat": 37.12345,
   "gps_lon": 127.54321,
-  "image_path": "result/images/IMG_001_0.jpg"
+  "image_path": "result/images/IMG_775_0.jpg"
 }
 ```
 
