@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/a59285b7-d39f-4724-af5d-778b27451c44)# 드론 기반 선박 탐지 및 지오레퍼런싱 시스템
+# 드론 기반 선박 탐지 및 지오레퍼런싱 시스템
 - 드론 기종: 매빅3
 - Docker 사용방법
 
@@ -62,6 +62,7 @@ input/images/
 
 # 최종 구현 방법
 <img src="https://github.com/user-attachments/assets/4d7cb6f7-00b5-4109-b672-fc4001939746" alt="최종 목표 가시화" width="500"/>
+
 1. 드론 정보
   - 경로: result/json
   - 드론의 위도: "drone_lat"
