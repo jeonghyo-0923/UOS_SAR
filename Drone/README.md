@@ -46,13 +46,18 @@ input/images/
 - `result/json`: 선박 정보 (위치, 클래스 등) 포함한 JSON
 
 ```bash
-  {
-  "class_id": 0,
-  "x_center": 0.521,
-  "y_center": 0.498,
-  "gps_lat": 37.12345,
-  "gps_lon": 127.54321,
-  "image_path": "result/images/IMG_775_0.jpg"
+{
+    "class_id": 0,
+    "x_center": 0.669799,
+    "y_center": 0.51583,
+    "BBOX": 0.00551150110495,
+    "frame_time": "2025-06-27T04:54:31.023493",
+    "image_path": "./result/images/DJI_0775_0.jpg",
+    "drone_lat": 35.924652214,
+    "drone_lon": 126.515188839,
+    "gps_lat": 35.92450570883135,
+    "gps_lon": 126.51777891662977,
+    "capture_time": "2023-09-19T09:07:49"
 }
 ```
 
