@@ -60,3 +60,6 @@ input/images/
 }
 ```
 
+# 최종 구현 방법
+<img src="https://github.com/user-attachments/assets/15a40fdc-e45d-4787-ad91-b8c30ce29939" alt="최종 목표 가시화" width="500"/>
+
