@@ -41,9 +41,10 @@ sar_uav/
 
 # result 출력 예시
 - result/images
-<img src="https://github.com/user-attachments/assets/85ad56e3-ddb9-45f2-ab1e-54b25c678fb3" alt="최종 목표 가시화" width="500"/>
+<img src="https://github.com/user-attachments/assets/85ad56e3-ddb9-45f2-ab1e-54b25c678fb3" alt="최종 목표 가시화" width="200"/>
+
 - result/json
-```
+```bash
   {
   "class_id": 0,
   "x_center": 0.521,
