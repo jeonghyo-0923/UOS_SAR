@@ -32,19 +32,13 @@ sar_uav/
 └── requirements.txt              # Python 패키지 요구사항
 ```
 
-# 디렉토리 정보
+# 디렉토리 정보 및 입출력 예시
 - `input/images`: 입력 이미지 (드론 촬영 .JPG 파일)
-- `scripts/`: 각 처리 단계를 위한 파이썬 스크립트
 - `runs/`: YOLOv8 예측 결과
-- `result/images`: 객체 단위로 잘라낸 이미지
-- `result/json`: 객체 정보 (위치, 클래스 등) 포함한 JSON
-
-# result 출력 예시
-- result/images
+- `result/images`: 선박 단위로 잘라낸 이미지
 <img src="https://github.com/user-attachments/assets/85ad56e3-ddb9-45f2-ab1e-54b25c678fb3" alt="최종 목표 가시화" width="200"/>
-
-- result/json
-```bash
+- `result/json`: 선박 정보 (위치, 클래스 등) 포함한 JSON
+  ```bash
   {
   "class_id": 0,
   "x_center": 0.521,
@@ -54,5 +48,4 @@ sar_uav/
   "image_path": "result/images/IMG_001_0.jpg"
 }
 ```
-
 
