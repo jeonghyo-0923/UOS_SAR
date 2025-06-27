@@ -84,7 +84,9 @@ result/images/
 ```
 
 # 최종 구현 방법
+<div align="center">
 <img src="https://github.com/user-attachments/assets/4d7cb6f7-00b5-4109-b672-fc4001939746" alt="최종 목표 가시화" width="500"/>
+</div>
 
 1. 드론 정보
   - 경로: result/json
