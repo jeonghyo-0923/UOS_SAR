@@ -33,18 +33,37 @@ sar_uav/
 ```
 
 # 디렉토리 정보 및 입출력 예시
-- `input/images`: 입력 이미지 (드론 촬영 .JPG 파일)
+### (입력) `input/images`: 입력 이미지 (드론 촬영 .JPG 파일)
 ```bash
 input/images/
 ├── DJI_0775.JPG
 ├── DJI_0776.JPG
 ```
 
-- `result/images`: 선박 단위로 잘라낸 이미지
+### (출력) `result/images`: 선박 단위로 잘라낸 이미지
+- <원본 이미지명>_<객체순번>.JPG으로 저장
+```
+result/images/
+├── DJI_0775_0.JPG
+├── DJI_0775_1.JPG
+├── DJI_0776_0.JPG
+├── DJI_0777_0.JPG
+```
+
+- 예시
 <img src="https://github.com/user-attachments/assets/85ad56e3-ddb9-45f2-ab1e-54b25c678fb3" alt="최종 목표 가시화" width="200"/>
 
-- `result/json`: 선박 정보 (위치, 클래스 등) 포함한 JSON
+### (출력) `result/json`: 선박 정보 (위치, 클래스 등) 포함한 JSON
+- <원본 이미지명>_<객체순번>.json으로 저장(이미지와 1:1대응)
+```
+result/images/
+├── DJI_0775_0.json
+├── DJI_0775_1.json
+├── DJI_0776_0.json
+├── DJI_0777_0.json
+```
 
+- 예시
 ```bash
 {
     "class_id": 0,
