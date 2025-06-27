@@ -1,4 +1,4 @@
-# 드론 기반 선박 탐지 및 지오레퍼런싱 시스템
+![image](https://github.com/user-attachments/assets/a59285b7-d39f-4724-af5d-778b27451c44)# 드론 기반 선박 탐지 및 지오레퍼런싱 시스템
 - 드론 기종: 매빅3
 - Docker 사용방법
 
@@ -61,5 +61,22 @@ input/images/
 ```
 
 # 최종 구현 방법
-<img src="https://github.com/user-attachments/assets/15a40fdc-e45d-4787-ad91-b8c30ce29939" alt="최종 목표 가시화" width="500"/>
-
+<img src="https://github.com/user-attachments/assets/4d7cb6f7-00b5-4109-b672-fc4001939746" alt="최종 목표 가시화" width="500"/>
+1. 드론 정보
+  - 경로: result/json
+  - 드론의 위도: "drone_lat"
+  - 드론의 경고: "drone_lon"
+2. 선박 위치 추적
+  - 경로: result/json
+  - 선박의 위도: "gps_lat"
+  - 선박의 경도: "gps_lon"
+  - 촬영 시간: "capture_time" (촬영 시간에 따른 선박 추적 가시화)
+3. 선박 이미지
+  - 경로: result/images
+4. 선박 속성 정보
+  - 경로: result/json
+  - 클래스 id: "class_id"
+  - 선박의 위도: "gps_lat"
+  - 선박의 경도: "gps_lon"
+  - 촬영 시간: "capture_time"
+  - 해당 이미지 경로: "image_path"
