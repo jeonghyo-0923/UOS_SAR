@@ -51,7 +51,6 @@ input/images/
     "x_center": 0.669799,
     "y_center": 0.51583,
     "BBOX": 0.00551150110495,
-    "frame_time": "2025-06-27T04:54:31.023493",
     "image_path": "./result/images/DJI_0775_0.jpg",
     "drone_lat": 35.924652214,
     "drone_lon": 126.515188839,
