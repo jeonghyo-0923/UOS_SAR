@@ -2,6 +2,26 @@
 - 드론으로 촬영한 항공 이미지를 입력으로 이미지 내에 존재하는 선박을 자동으로 탐지하고, 각 선박의 경위도좌표를 계산하여 객체 단위 이미지 및 JSON 메타정보를 출력
 - 드론 기종: M30T(다른 기종 고려 예정)
 
+# Docker 사용 방법
+- 폴더 이동
+```
+cd ./sar_uav
+```
+
+- 이미지 빌드
+```
+  docker build -t my-pytorch-app .
+```
+
+- 도커 실행
+```
+docker run --rm \
+-v $(pwd)/input:/workspace/sar_uav/input \
+-v $(pwd)/runs:/workspace/sar_uav/runs \
+-v $(pwd)/result:/workspace/sar_uav/result \
+my-pytorch-app
+```
+
 # 최종 가시화 결과
 <div align="center">
 <img src="https://github.com/user-attachments/assets/84cb42f8-61c9-45d0-b362-ad4bc6e4f9f0" alt="최종 목표 가시화" width="500"/>
@@ -43,7 +63,7 @@ input/images/
 ```
 
 ### (출력 - 이미지) `result/images`: 선박 단위로 잘라낸 이미지
-- <원본 이미지명>_<객체순번>.JPG으로 저장
+- <원본 이미지명>_<객체순번>.JPG으로 저장(속성정보와 1:1대응)
 ```
 result/images/
 ├── DJI_0775_0.JPG
@@ -94,9 +114,9 @@ result/images/
   - 선박의 위도: "gps_lat"
   - 선박의 경도: "gps_lon"
   - 촬영 시간: "capture_time" (촬영 시간에 따른 선박 추적 가시화)
-3. 선박 이미지
+3. 선박 이미지 (속성정보와 이미지명으로 1:1대응)
   - 경로: result/images
-4. 선박 속성 정보
+4. 선박 속성 정보 (이미지와 이미지명으로 1:1대응)
   - 경로: result/json
   - 클래스 id: "class_id"
   - 선박의 위도: "gps_lat"
@@ -104,22 +124,3 @@ result/images/
   - 촬영 시간: "capture_time"
   - 해당 이미지 경로: "image_path"
 
-# Docker 사용 방법
-- 폴더 이동
-```
-cd ./sar_uav
-```
-
-- 이미지 빌드
-```
-  docker build -t my-pytorch-app .
-```
-
-- 도커 실행
-```
-docker run --rm \
--v $(pwd)/input:/workspace/sar_uav/input \
--v $(pwd)/runs:/workspace/sar_uav/runs \
--v $(pwd)/result:/workspace/sar_uav/result \
-my-pytorch-app
-```
