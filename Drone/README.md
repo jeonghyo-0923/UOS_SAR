@@ -42,7 +42,7 @@ input/images/
 ├── DJI_0776.JPG
 ```
 
-### (출력) `result/images`: 선박 단위로 잘라낸 이미지
+### (출력 - 이미지) `result/images`: 선박 단위로 잘라낸 이미지
 - <원본 이미지명>_<객체순번>.JPG으로 저장
 ```
 result/images/
@@ -57,7 +57,7 @@ result/images/
 <img src="https://github.com/user-attachments/assets/85ad56e3-ddb9-45f2-ab1e-54b25c678fb3" alt="최종 목표 가시화" width="200"/>
 </div>
 
-### (출력) `result/json`: 선박 정보 (위치, 클래스 등) 포함한 JSON
+### (출력- 속성정보) `result/json`: 선박 정보 (위치, 클래스 등) 포함한 JSON
 - <원본 이미지명>_<객체순번>.json으로 저장(이미지와 1:1대응)
 ```
 result/images/
