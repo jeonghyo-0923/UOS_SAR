@@ -105,4 +105,15 @@ result/images/
   - 해당 이미지 경로: "image_path"
 
 # Docker 사용 방법
-
+- 이미지 빌드
+```
+  docker build -t my-pytorch-app .
+```
+- 도커 실행
+```
+docker run --rm \
+-v $(pwd)/input:/workspace/sar_uav/input \
+-v $(pwd)/runs:/workspace/sar_uav/runs \
+-v $(pwd)/result:/workspace/sar_uav/result \
+my-pytorch-app
+```
