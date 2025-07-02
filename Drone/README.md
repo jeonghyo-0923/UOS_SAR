@@ -37,21 +37,21 @@ my-pytorch-app
 ```
 sar_uav/
 │
-├── input/                         # 입력 데이터 폴더
-│   ├── images/                   # 드론 촬영 원본 이미지
-│   └── extracted_metadata.csv    # 추출된 메타데이터(csv)
+├── input/                        # 입력 데이터 폴더
+│   └── images/                   # 드론 촬영 원본 이미지
 │
-├── result/                        # 출력 결과 폴더
+├── result/                       # 출력 결과 폴더
 │   ├── images/                   # 탐지된 객체 잘라낸 이미지
 │   └── json/                     # 객체 정보(JSON, GPS 포함)
 │
-├── runs/                          # YOLOv8 실행 결과
+├── runs/                         # YOLOv8 실행 결과
 │   └── detect/
 │       └── predict/              # YOLOv8 추론 결과 (라벨 포함)
 │
 ├── best.pt                       # YOLOv8 훈련된 모델 가중치
 ├── data.yaml                     # YOLOv8 클래스 설정 파일
-└── requirements.txt              # Python 패키지 요구사항
+├── requirements.txt              # Python 패키지 요구사항
+└── my-pytorch-app.tar            # Docker 이미지 파일
 ```
 
 # 디렉토리 정보 및 입출력 예시
@@ -63,7 +63,7 @@ input/images/
 ```
 
 ### (출력 - 이미지) `result/images`: 선박 단위로 잘라낸 이미지
-- <원본 이미지명>_<객체순번>.JPG으로 저장(속성정보와 1:1대응)
+- <원본 이미지명>_<객체순번>.JPG으로 저장(속성정보와 이미지명으로 1:1대응)
 ```
 result/images/
 ├── DJI_0775_0.JPG
@@ -78,7 +78,7 @@ result/images/
 </div>
 
 ### (출력- 속성정보) `result/json`: 선박 정보 (위치, 클래스 등) 포함한 JSON
-- <원본 이미지명>_<객체순번>.json으로 저장(이미지와 1:1대응)
+- <원본 이미지명>_<객체순번>.json으로 저장(속성정보와 이미지명으로 1:1대응)
 ```
 result/images/
 ├── DJI_0775_0.json
