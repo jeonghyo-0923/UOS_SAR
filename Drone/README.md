@@ -98,7 +98,7 @@ result/images/
 }
 ```
 
-# 최종 구현 방법
+# 최종 구............
 <div align="center">
 <img src="https://github.com/user-attachments/assets/4d7cb6f7-00b5-4109-b672-fc4001939746" alt="최종 목표 가시화" width="500"/>
 </div>
@@ -106,7 +106,7 @@ result/images/
 1. 드론 정보
   - 경로: result/json
   - 드론의 위도: "drone_lat"
-  - 드론의 경고: "drone_lon"
+  - 드론의 경도: "drone_lon"
 2. 선박 위치 추적
   - 경로: result/json
   - 선박의 위도: "gps_lat"
