@@ -48,8 +48,6 @@ sar_uav/
 │   └── detect/
 │       └── predict/              # YOLOv8 추론 결과 (라벨 포함)
 │
-├── best.pt                       # YOLOv8 훈련된 모델 가중치
-├── data.yaml                     # YOLOv8 클래스 설정 파일
 ├── requirements.txt              # Python 패키지 요구사항
 └── my-pytorch-app.tar            # Docker 이미지 파일
 ```
