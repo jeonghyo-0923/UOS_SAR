@@ -1,0 +1,12 @@
+{
+    "class_id": 0,
+    "x_center": 0.669798,
+    "y_center": 0.515828,
+    "BBOX": 0.00551136784016,
+    "image_path": "./result/images/DJI_0775_0.jpg",
+    "drone_lat": 35.924652214,
+    "drone_lon": 126.515188839,
+    "gps_lat": 35.924505727341156,
+    "gps_lon": 126.51777890137599,
+    "capture_time": "2023-09-19T09:07:49"
+}
