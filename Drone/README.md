@@ -9,6 +9,7 @@
 <div align="center">
 <img src="https://github.com/user-attachments/assets/b57ca2d7-62d1-4665-a153-6c2fd701c5f0" alt="최종 목표 가시화" width="500"/>
 </div>
+
 - 드론
   - 드론의 위치 기반 수색 경로 시각화
   - 드론 비행 중 기록된 경위도 좌표 출력
