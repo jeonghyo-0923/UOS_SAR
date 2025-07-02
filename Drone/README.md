@@ -36,9 +36,9 @@ sar_uav/
 │   ├── images/                   # 탐지된 객체 잘라낸 이미지
 │   └── json/                     # 객체 정보(JSON, GPS 포함)
 │
-├── runs/                         # YOLOv8 실행 결과
+├── runs/                         # 탐지 모델 실행 결과
 │   └── detect/
-│       └── predict/              # YOLOv8 추론 결과 (라벨 포함)
+│       └── predict/              # 탐지 모델 추론 결과 (라벨 포함)
 │
 ├── requirements.txt              # Python 패키지 요구사항
 └── my-pytorch-app.tar            # Docker 이미지 파일
