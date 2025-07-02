@@ -1,26 +1,9 @@
 # 드론 기반 선박 탐지 및 지오레퍼런싱 시스템
-- 드론으로 촬영한 항공 이미지를 입력으로 이미지 내에 존재하는 선박을 자동으로 탐지하고, 각 선박의 경위도좌표를 계산하여 객체 단위 이미지 및 JSON 메타정보를 출력
+- 드론으로 촬영한 항공 이미지를 입력으로 이미지 내에 존재하는 선박을 자동으로 탐지하고, 
+  각 선박의 경위도좌표를 계산하여 객체 단위 이미지 및 JSON 메타정보를 출력
 - 드론 기종: M30T(다른 기종 고려 예정)
-
-# Docker 사용 방법
-- 폴더 이동
-```
-cd ./sar_uav
-```
-
-- 이미지 빌드
-```
-  docker build -t my-pytorch-app .
-```
-
-- 도커 실행
-```
-docker run --rm \
--v $(pwd)/input:/workspace/sar_uav/input \
--v $(pwd)/runs:/workspace/sar_uav/runs \
--v $(pwd)/result:/workspace/sar_uav/result \
-my-pytorch-app
-```
+- class: 선박(사람은 추후 추가 예정)
+- 센서: 광학 센서(IR센서 추후 추가 예정)
 
 # 최종 가시화 결과
 <div align="center">
@@ -29,9 +12,9 @@ my-pytorch-app
 
 # 주요 기능
 1. **메타데이터 추출**: 이미지에 포함된 촬영 시점, GPS 정보, 카메라 파라미터 등 XMP 데이터 추출
-2. **선박 탐지 (YOLOv8)**: 미리 학습된 모델(`best.pt`)을 활용해 선박을 탐지
-3. **지오레퍼런싱**: 탐지된 객체의 중심 위치를 실제 GPS 좌표로 변환
-4. **객체 정보 출력**: 객체 단위로 이미지 crop + JSON 파일 생성
+2. **선박 탐지 (YOLOv8)**: 미리 학습된 모델을 활용해 선박 탐지
+3. **지오레퍼런싱**: 탐지된 객체의 중심 위치를 실제 경위도 좌표로 변환
+4. **객체 정보 출력**: 객체 단위로 이미지 crop된 이미지 및 JSON 파일(속성정보) 생성
 
 # 폴더구조
 ```
@@ -122,3 +105,22 @@ result/images/
   - 촬영 시간: "capture_time"
   - 해당 이미지 경로: "image_path"
 
+# Docker 사용 방법
+- 폴더 이동
+```
+cd ./sar_uav
+```
+
+- 이미지 빌드
+```
+  docker build -t my-pytorch-app .
+```
+
+- 도커 실행
+```
+docker run --rm \
+-v $(pwd)/input:/workspace/sar_uav/input \
+-v $(pwd)/runs:/workspace/sar_uav/runs \
+-v $(pwd)/result:/workspace/sar_uav/result \
+my-pytorch-app
+```
