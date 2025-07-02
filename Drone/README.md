@@ -98,7 +98,7 @@ result/images/
 }
 ```
 
-# 최종 구............
+# 최종 시각화를 위한 데이터
 <div align="center">
 <img src="https://github.com/user-attachments/assets/4d7cb6f7-00b5-4109-b672-fc4001939746" alt="최종 목표 가시화" width="500"/>
 </div>
