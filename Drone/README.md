@@ -5,7 +5,7 @@
 - 탐지 클래스: 선박 (※ 사람 클래스는 향후 추가 예정)
 - 탑재 센서: 광학 센서 (※ IR 센서는 추후 확장 예정)
 
-# 최종 가시화 결과
+## 최종 가시화 결과
 <div align="center">
 <img src="https://github.com/user-attachments/assets/b57ca2d7-62d1-4665-a153-6c2fd701c5f0" alt="최종 목표 가시화" width="500"/>
 </div>
