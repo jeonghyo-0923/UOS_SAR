@@ -11,9 +11,13 @@ docker run --rm -v ${PWD}/input:/app/input -v ${PWD}/output:/app/output ship_det
 ### 동영상을 이미지로 변환
 1. 
 
+### OCR기반 메타정보 추출
+
 ### 이미지에서 선박을 탐지
 
-### 탐지 선박 이미지와 속성정보를 저장
+### 탐지 선박 지오레퍼런싱
+
+### 탐지 선박 이미지와 속성정보를 jpg와 json으로 추출
 
 
 # 데이터
