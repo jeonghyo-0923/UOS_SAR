@@ -8,6 +8,8 @@ docker run --rm -v ${PWD}/input:/app/input -v ${PWD}/output:/app/output ship_det
 ```
 
 # 데이터 처리
+<img width="1768" height="669" alt="image" src="https://github.com/user-attachments/assets/29c12799-7d73-4498-abe4-ed39fdc3ea72" />
+
 ### 동영상을 이미지로 변환
 1. 
 
