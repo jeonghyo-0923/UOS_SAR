@@ -7,8 +7,7 @@
 
 ## 최종 가시화 결과
 <div align="center">
-<img src="<img width="1032" height="599" alt="image" src="https://github.com/user-attachments/assets/fe1dbf7f-1313-497c-937f-03e7cd2639e5" />
-" alt="최종 목표 가시화" width="500"/>
+<img src="<img width="1032" height="599" alt="image" src="<img width="1032" height="599" alt="image" src="https://github.com/user-attachments/assets/0823e1f3-a319-40c0-bc3f-44c34d4c0f69" />
 </div>
 
 - 드론
