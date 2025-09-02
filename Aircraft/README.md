@@ -37,37 +37,37 @@
 └── runs/
 ```
 
-# 디렉토리 정보 및 입출력 예시
-### (입력) `input/images`: 입력 이미지 (드론 촬영 .JPG 파일)
+# 디렉토리 정보 및 입출력 예시 - 수정중
+### (입력) `input/images`: 입력 이미지 (영상이름_순서.JPG 파일)
 ```bash
 input/images/
-├── DJI_0775.JPG
-├── DJI_0776.JPG
+├── VideoName_0000.jpg
+├── VideoName_0001.jpg
 ```
 
 ### (출력 - 이미지) `result/images`: 선박 단위로 잘라낸 이미지
 - <원본 이미지명>_<객체순번>.JPG으로 저장(속성정보와 이미지명으로 1:1대응)
 ```
 result/images/
-├── DJI_0775_0.JPG
-├── DJI_0775_1.JPG
-├── DJI_0776_0.JPG
-├── DJI_0777_0.JPG
+├── VideoName_0000_0.JPG
+├── VideoName_0000_1.JPG
+├── VideoName_0001_0.JPG
+├── VideoName_0002_0.JPG
 ```
 
 - 예시
 <div align="center">
-<img src="https://github.com/user-attachments/assets/85ad56e3-ddb9-45f2-ab1e-54b25c678fb3" alt="최종 목표 가시화" width="200"/>
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/fdfc1483-8161-4414-ae7b-b3a6e7858b55" />
 </div>
 
 ### (출력- 속성정보) `result/json`: 선박 정보 (위치, 클래스 등) 포함한 JSON
 - <원본 이미지명>_<객체순번>.json으로 저장(속성정보와 이미지명으로 1:1대응)
 ```
-result/images/
-├── DJI_0775_0.json
-├── DJI_0775_1.json
-├── DJI_0776_0.json
-├── DJI_0777_0.json
+result/json/
+├── VideoName_0000_0.json
+├── VideoName_0000_1.json
+├── VideoName_0001_0.json
+├── VideoName_0002_0.json
 ```
 
 - 예시
