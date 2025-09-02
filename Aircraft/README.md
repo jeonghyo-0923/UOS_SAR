@@ -6,7 +6,9 @@
 - 탑재 센서: 광학 센서 (※ IR 센서는 추후 확장 예정)
 
 ## 최종 가시화 결과
-<img width="1032" height="599" alt="image" src="https://github.com/user-attachments/assets/5f11aea4-cfe1-43ab-b079-0581284dc724" />
+<div align="center">
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/5f11aea4-cfe1-43ab-b079-0581284dc724" />
+</div>
 
 
 - 드론
