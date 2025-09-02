@@ -38,11 +38,10 @@
 ```
 
 # 디렉토리 정보 및 입출력 예시 - 수정중
-### (입력) `input/images`: 입력 이미지 (영상이름_순서.JPG 파일)
+### (입력) `input/video`: 입력 동영상 (동영상이름.mp4 파일)
 ```bash
-input/images/
-├── VideoName_0000.jpg
-├── VideoName_0001.jpg
+input/video/
+├── VideoName.mp4
 ```
 
 ### (출력 - 이미지) `result/images`: 선박 단위로 잘라낸 이미지
