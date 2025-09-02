@@ -6,9 +6,8 @@
 - 탑재 센서: 광학 센서 (※ IR 센서는 추후 확장 예정)
 
 ## 최종 가시화 결과
-<div align="center">
-<img src="<img width="1032" height="599" alt="image" src="<img width="1032" height="599" alt="image" src="https://github.com/user-attachments/assets/0823e1f3-a319-40c0-bc3f-44c34d4c0f69" />
-</div>
+<img width="1032" height="599" alt="image" src="https://github.com/user-attachments/assets/5f11aea4-cfe1-43ab-b079-0581284dc724" />
+
 
 - 드론
   - 드론의 위치 기반 수색 경로 시각화
