@@ -1,11 +1,24 @@
-# 사용방법
-```
-# 도커 이미지 빌드
-docker build -t ship_detection_pipeline .
+# 드론 기반 선박 탐지 및 지오레퍼런싱 시스템
+- 드론으로 촬영한 항공 영상을 입력으로 받아, 이미지 내 존재하는 객체를 자동으로 탐지하고,
+각 객체의 경위도 좌표를 계산하여 객체 단위의 크롭 이미지 및 JSON 형식 속성정보를 출력
+- 드론 기종: DJI M30T (※ 추후 다른 기종도 적용 예정)
+- 탐지 클래스: 선박 (※ 사람 클래스는 향후 추가 예정)
+- 탑재 센서: 광학 센서 (※ IR 센서는 추후 확장 예정)
 
-# 도커 컨테이너 실행
-docker run --rm -v ${PWD}/input:/app/input -v ${PWD}/output:/app/output ship_detection_pipeline
-```
+## 최종 가시화 결과
+<div align="center">
+<img src="<img width="1032" height="599" alt="image" src="https://github.com/user-attachments/assets/644a7bbd-b400-4a8b-8c6d-87c7d4ee3d5c" />" alt="최종 목표 가시화" width="500"/>
+</div>
+
+- 드론
+  - 드론의 위치 기반 수색 경로 시각화
+  - 드론 비행 중 기록된 경위도 좌표 출력
+- 탐지된 객체
+  - 객체 클래스 정보 표시(선박, 사람)
+  - 촬영 영상 기준 탐지 객체의 경위도 좌표 제공
+  - 탐지된 객체 영역을 크롭한 이미지 출력
+  - 탐지 시각(타임스탬프) 정보 표시
+
 
 # 데이터 처리
 
