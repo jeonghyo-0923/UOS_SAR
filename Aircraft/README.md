@@ -90,3 +90,47 @@ result/json/
   "aircraft_latitude": 34.923833333333334                      # 유인기 경위도 좌표
 }
 ```
+
+# 최종 가시화를 위한 데이터 - 수정예정
+<div align="center">
+<img src="https://github.com/user-attachments/assets/4d7cb6f7-00b5-4109-b672-fc4001939746" alt="최종 목표 가시화" width="500"/>
+</div>
+
+1. 드론 정보
+  - 경로: result/json
+  - 드론의 위도: "drone_lat"
+  - 드론의 경도: "drone_lon"
+2. 선박 위치 추적
+  - 경로: result/json
+  - 선박의 위도: "gps_lat"
+  - 선박의 경도: "gps_lon"
+  - 촬영 시간: "capture_time" (촬영 시간에 따른 선박 추적 가시화)
+3. 선박 이미지 (속성정보와 이미지명으로 1:1대응)
+  - 경로: result/images
+4. 선박 속성 정보 (이미지와 이미지명으로 1:1대응)
+  - 경로: result/json
+  - 클래스 id: "class_id"
+  - 선박의 위도: "gps_lat"
+  - 선박의 경도: "gps_lon"
+  - 촬영 시간: "capture_time"
+  - 해당 이미지 경로: "image_path"
+
+# Docker 사용 방법 - 수정예정
+- 폴더 이동
+```
+cd ./sar_uav
+```
+
+- 이미지 빌드
+```
+  docker build -t my-pytorch-app .
+```
+
+- 도커 실행
+```
+docker run --rm \
+-v $(pwd)/input:/workspace/sar_uav/input \
+-v $(pwd)/runs:/workspace/sar_uav/runs \
+-v $(pwd)/result:/workspace/sar_uav/result \
+my-pytorch-app
+```
