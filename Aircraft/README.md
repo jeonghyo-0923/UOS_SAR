@@ -19,19 +19,19 @@
 # 주요기능
 1. 동영상을 이미지로 변환: 동영상을 입력으로 하여 프레임 단위로 이미지 변환
 2. 유인기 영상에서 OCR기반 메타데이터 추출
-3. 선박 탐지: 미리 학습된 모델을 활용해 선박 탐지
-4. 지오레퍼런싱: 탐지된 객체의 중심 위치를 실제 경위도 좌표로 변환
+3. 미리 학습된 모델을 활용해 선박 탐지
+4. 탐지된 객체의 중심 위치를 실제 경위도 좌표로 변환
 5. 객체 정보 출력: 객체 단위로 이미지 crop된 이미지 및 JSON 파일(속성정보) 생성
 
 
-# 폴더구조 - 수정필요
+# 폴더구조 
 ```
-[수정할것]
 .
-├── dataset/
-│   ├── test/
+├── input/
+│   ├── images/
 │   └── video/
 ├── result/
+│   ├── csv/
 │   ├── images/
 │   └── json/
 └── runs/
@@ -80,38 +80,39 @@ result/json/
   "proj_epsg": 5185,                                           # 좌표계
   "X_5185": 145963.3827057409,                                 # 객체 중심 위치(5185 기준)
   "Y_5185": 261338.09072368147,                                # 객체 중심 위치(5185 기준)
-  "longitude": 124.4084526976203,                              # 객체 경위도 좌표
-  "latitude": 34.94666868163483,                               # 객체 경위도 좌표
+  "longitude": 124.4084526976203,                              # 객체 경도 좌표
+  "latitude": 34.94666868163483,                               # 객체 위도 좌표
   "photo_time": "14:42:08L",                                   # 영상 촬영 시간
   "aircraft_X_5185": 145003.95538278137,                       # 유인기 위치(5185 기준)
   "aircraft_Y_5185": 258810.33549579047,                       # 유인기 위치(5185 기준)
-  "aircraft_longitude": 124.39811666666667,                    # 유인기 경위도 좌표
-  "aircraft_latitude": 34.923833333333334                      # 유인기 경위도 좌표
+  "aircraft_longitude": 124.39811666666667,                    # 유인기 경도 좌표
+  "aircraft_latitude": 34.923833333333334                      # 유인기 위도 좌표
 }
 ```
 
-# 최종 가시화를 위한 데이터 - 수정예정
+# 최종 가시화를 위한 데이터 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/4d7cb6f7-00b5-4109-b672-fc4001939746" alt="최종 목표 가시화" width="500"/>
+<img width="1286" height="677" alt="image" src="https://github.com/user-attachments/assets/aae644c7-ce7f-4a7e-84a0-85b41b93f1af" />
 </div>
 
-1. 드론 정보
+1. 유인기 정보
   - 경로: result/json
-  - 드론의 위도: "drone_lat"
-  - 드론의 경도: "drone_lon"
+  - 유인기 위도: "aircraft_latitude"
+  - 유인기 경도: "aircraft_longitude"
+
 2. 선박 위치 추적
   - 경로: result/json
-  - 선박의 위도: "gps_lat"
-  - 선박의 경도: "gps_lon"
-  - 촬영 시간: "capture_time" (촬영 시간에 따른 선박 추적 가시화)
+  - 선박의 위도: "latitude"
+  - 선박의 경도: "longitude"
+  - 촬영 시간: "phroto_time" (촬영 시간에 따른 선박 추적 가시화)
 3. 선박 이미지 (속성정보와 이미지명으로 1:1대응)
   - 경로: result/images
 4. 선박 속성 정보 (이미지와 이미지명으로 1:1대응)
   - 경로: result/json
   - 클래스 id: "class_id"
-  - 선박의 위도: "gps_lat"
-  - 선박의 경도: "gps_lon"
-  - 촬영 시간: "capture_time"
+  - 선박의 위도: "latitude"
+  - 선박의 경도: "longitude"
+  - 촬영 시간: "phroto_time"
   - 해당 이미지 경로: "image_path"
 
 # Docker 사용 방법 - 수정예정
