@@ -92,7 +92,7 @@ result/json/
 
 # 최종 가시화를 위한 데이터 
 <div align="center">
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/aae644c7-ce7f-4a7e-84a0-85b41b93f1af" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/aae644c7-ce7f-4a7e-84a0-85b41b93f1af" />
 </div>
 
 1. 유인기 정보
