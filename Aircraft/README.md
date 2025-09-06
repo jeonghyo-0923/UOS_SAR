@@ -129,8 +129,8 @@ cd ./sar_uav
 - 도커 실행
 ```
 docker run --rm \
--v $(pwd)/input:/workspace/sar_uav/input \
--v $(pwd)/runs:/workspace/sar_uav/runs \
--v $(pwd)/result:/workspace/sar_uav/result \
+-v $(pwd)/input:/workspace/sar_air/input \
+-v $(pwd)/runs:/workspace/sar_air/runs \
+-v $(pwd)/result:/workspace/sar_air/result \
 my-pytorch-app
 ```
