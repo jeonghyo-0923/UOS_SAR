@@ -29,7 +29,7 @@
 .
 ├── input/
 │   ├── images/
-│   └── video/
+│   └── video/      # 여기에 동영상 입력
 ├── result/
 │   ├── csv/
 │   ├── images/
