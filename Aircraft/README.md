@@ -118,7 +118,7 @@ result/json/
 # Docker 사용 방법 - 수정예정
 - 폴더 이동
 ```
-cd ./sar_uav
+cd ./sar_air
 ```
 
 - 이미지 빌드
