@@ -4,7 +4,7 @@
 
 ## 최종 가시화 결과
 <div align="center">
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/7a281e26-7e8f-4cb8-89ba-d48cde921bf7" />
+<img width="800" alt="그림2" src="https://github.com/user-attachments/assets/c668b3d4-9b2e-4c92-ad51-b7706de4883f" />
 </div>
 
 - 유인기
