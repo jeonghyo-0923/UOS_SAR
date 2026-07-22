@@ -73,6 +73,3 @@ docker run --rm \
 각 서브 폴더 내 `requirements.txt` 참고
 - [Aircraft/requirements.txt](./Aircraft/requirements.txt)
 - [Drone/requirements.txt](./Drone/requirements.txt)
-
-## License
-[라이선스 정보 필요]
